@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="icon" type="image/x-icon" href="netflix-logo-png-transparent-png.png">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .first {
+            background-image: linear-gradient(to bottom, rgb(0, 0, 0, 1), rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 1)), url("D:/ShreeK/netflix-background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .header {
+            display: flex;
+            flex-wrap: nowrap;
+            width: auto;
+        }
+
+        #logo {
+            width: 140px;
+            height: 140px;
+            margin-left: 120px;
+            margin-top: -40px;
+        }
+
+        #sign {
+            width: 100px;
+            height: 26px;
+            text-align: center;
+            background-color: rgb(229, 9, 20);
+            border-color: rgb(229, 9, 20);
+            color: rgb(255, 255, 255);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 5px;
+            border-style: solid;
+            margin-left: 850px;
+            margin-top: 18px;
+        }
+
+        #sign:hover {
+            background-color: rgb(150, 20, 46);
+            border-color: rgb(150, 20, 46);
+        }
+
+        #sign:active {
+            background-color: rgb(120, 20, 46);
+            border-color: rgb(120, 20, 46);
+        }
+
+        #google_translate_element {
+            margin-left: -270px;
+            margin-top: 18px;
+        }
+
+        .midSection {
+            margin: auto;
+            margin-top: 150px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        #email {
+            height: 50px;
+            width: 400px;
+            border-radius: 5px;
+            background-color: rgba(24, 23, 23, 0.5);
+            border-style: solid;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            color: white;
+            padding: 0px 10px;
+            border-color: rgba(65, 62, 62, 0.8);
+        }
+
+
+        #start {
+            height: 55px;
+            width: 180px;
+            background-color: rgb(229, 9, 20);
+            border-color: rgb(229, 9, 20);
+            border-radius: 5px;
+            border-style: solid;
+            color: white;
+            text-align: center;
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+
+        #start:hover {
+            background-color: rgb(150, 20, 46);
+            border-color: rgb(150, 20, 46);
+        }
+
+        #start:active {
+            background-color: rgb(120, 20, 46);
+            border-color: rgb(120, 20, 46);
+        }
+
+        hr {
+            height: 3px;
+            width: 100%;
+            background-color: rgb(100, 98, 98);
+            border-style: solid;
+            border-color: rgb(100, 98, 98);
+        }
+
+        .second {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .third {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .fourth {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .fifth {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #chill {
+            float: right;
+        }
+
+        .faq {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        #dq1 {
+            background-color: rgb(56, 54, 54);
+            height: 75px;
+            width: 1000px;
+            margin-left: 170px;
+            font-size: x-large;
+        }
+
+        #dq1:hover {
+            background-color: rgb(117, 111, 111, 0.8);
+            cursor: pointer;
+        }
+
+
+        #da1 {
+            background-color: rgb(56, 54, 54);
+            height: 250px;
+            width: 1000px;
+            margin-left: 168px;
+            font-size: x-large;
+            border: 2px solid rgb(0, 0, 0);
+            display: none;
+        }
+
+        #dq2 {
+            background-color: rgb(56, 54, 54);
+            height: 75px;
+            width: 1000px;
+            margin-left: 170px;
+            font-size: x-large;
+        }
+
+        #dq2:hover {
+            background-color: rgb(117, 111, 111, 0.8);
+            cursor: pointer;
+        }
+
+        #da2 {
+            background-color: rgb(56, 54, 54);
+            height: 150px;
+            width: 1000px;
+            margin-left: 168px;
+            font-size: x-large;
+            border: 2px solid rgb(0, 0, 0);
+            display: none;
+        }
+
+        #dq3 {
+            background-color: rgb(56, 54, 54);
+            height: 75px;
+            width: 1000px;
+            margin-left: 170px;
+            font-size: x-large;
+        }
+
+        #dq3:hover {
+            background-color: rgb(117, 111, 111, 0.8);
+            cursor: pointer;
+        }
+
+        #da3 {
+            background-color: rgb(56, 54, 54);
+            height: 300px;
+            width: 1000px;
+            margin-left: 168px;
+            font-size: x-large;
+            border: 2px solid rgb(0, 0, 0);
+            display: none;
+        }
+
+        #dq4 {
+            background-color: rgb(56, 54, 54);
+            height: 75px;
+            width: 1000px;
+            margin-left: 170px;
+            font-size: x-large;
+        }
+
+        #dq4:hover {
+            background-color: rgb(117, 111, 111, 0.8);
+            cursor: pointer;
+        }
+
+        #da4 {
+            background-color: rgb(56, 54, 54);
+            height: 150px;
+            width: 1000px;
+            margin-left: 168px;
+            font-size: x-large;
+            border: 2px solid rgb(0, 0, 0);
+            display: none;
+        }
+
+        #dq5 {
+            background-color: rgb(56, 54, 54);
+            height: 75px;
+            width: 1000px;
+            margin-left: 170px;
+            font-size: x-large;
+        }
+
+        #dq5:hover {
+            background-color: rgb(117, 111, 111, 0.8);
+            cursor: pointer;
+        }
+
+        #da5 {
+            background-color: rgb(56, 54, 54);
+            height: 150px;
+            width: 1000px;
+            margin-left: 168px;
+            font-size: x-large;
+            border: 2px solid rgb(0, 0, 0);
+            display: none;
+        }
+
+        #dq6 {
+            background-color: rgb(56, 54, 54);
+            height: 75px;
+            width: 1000px;
+            margin-left: 170px;
+            font-size: x-large;
+        }
+
+        #dq6:hover {
+            background-color: rgb(117, 111, 111, 0.8);
+            cursor: pointer;
+        }
+
+        #da6 {
+            background-color: rgb(56, 54, 54);
+            height: 250px;
+            width: 1000px;
+            margin-left: 168px;
+            font-size: x-large;
+            border: 2px solid rgb(0, 0, 0);
+            display: none;
+        }
+
+        footer {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <div class="header">
+            <img id="logo" src="netflix.png">
+            <button id="sign" name="sign"><b>Sign In</b></button>
+            <div id="google_translate_element"></div>
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({
+                        pageLanguage: 'en',  // Change 'en' to the language of your web page
+                        includedLanguages: 'en,es,fr,de,hi',  // Add more languages as needed
+                        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                    }, 'google_translate_element');
+                }
+            </script>
+            <script type="text/javascript"
+                src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <!-- End Google Translate Code -->
+        </div>
+        <div class="midSection">
+            <h1 style="font-size: 50px;"><b>Unlimited movies, TV shows and more</b> </h1>
+            <p style="font-size: 25px;">Watch anywhere. Cancel anytime.</p>
+            <p style="font-size: 20px;">Ready to watch? Enter your email to create or restart your membership.</p>
+            <div id="emailStart">
+                <input type="text" id="email" name="email" placeholder="Email address">
+                <button id="start" name="start">Get
+                    Started ></button>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <hr>
+    <div class="second">
+        <div style="margin-top: 100px; margin-left: 200px;">
+            <h1 style="font-weight: 1000; font-size: 50px ;">Enjoy on your TV</h1>
+            <p style="font-weight: 500; font-size: 25px;">Watch on smart TVs, PlayStation, Xbox,<br> Chromecast, Apple
+                TV,
+                Blu-ray players and <br>
+                more.</p>
+        </div>
+        <img src="netflix-intro.gif" width="300px" height="250px" id="chill"
+            style="margin-right: 200px; margin-top: -250px;">
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <div class="third">
+        <div style="margin-top: 100px; margin-left: 700px;">
+            <h1 style="font-weight: 1000; font-size: 50px ;">Download your shows<br> to watch offline</h1>
+            <p style="font-weight: 500; font-size: 25px;">Save your favourites easily and always have<br> something to
+                watch.</p>
+        </div>
+        <img src="mobile-0819.jpg" width="450px" height="350px" style="margin-left: 200px; margin-top: -400px;">
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <div class="fourth">
+        <div style="margin-top: 100px; margin-left: 200px;">
+            <h1 style="font-weight: 1000; font-size: 50px ;">Watch everywhere</h1>
+            <p style="font-weight: 500; font-size: 25px;">Stream unlimited movies and TV shows on<br>
+                your phone, tablet, laptop, and TV.</p>
+        </div>
+        <img src="giphy.gif" width="350px" height="250px" id="chill" style="margin-right: 200px; margin-top: -200px;">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <div class="fifth">
+        <div style="margin-top: 100px; margin-left: 700px;">
+            <h1 style="font-weight: 1000; font-size: 50px ;">Create profiles for<br> kids</h1>
+            <p style="font-weight: 500; font-size: 25px;">Send children on adventures with their<br> favourite
+                characters in a space made just for <br>them—free with your membership.</p>
+        </div>
+        <img src="child.png" width="450px" height="350px" style="margin-left: 200px; margin-top: -400px;">
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <div class="faq">
+        <h1 style="font-weight: 1000; font-size: 50px ;">Frequently Asked Questions</h1>
+        <div id="dq1">
+            <p id="q1" style="padding: 20px 5px;"> What is Netflix?
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+            <img src="plus.png" style="width: 50px; height: 50px; float: right; margin-top: -80px; margin-right: 20px;"
+                id="x1">
+        </div>
+        <div id="da1">
+            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies,<br> anime,
+            documentaries and more – on thousands of internet-connected devices.<br>
+            <br>
+            You can watch as much as you want, whenever you want, without a single ad – all for one<br> low monthly
+            price.
+            There's always something new to discover, and new<br> TV shows and movies are added every week!
+        </div>
+        <div id="dq2">
+            <p id="q2" style="padding: 20px 5px;"> How much does Netflix cost?
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+            <img src="plus.png" style="width: 50px; height: 50px; float: right; margin-top: -80px; margin-right: 20px;"
+                id="x2">
+        </div>
+        <div id="da2">
+            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for<br> one fixed
+            monthly
+            fee. Plans range from ₹ 649 to ₹ 149 a month. No extra costs, no<br> contracts.
+        </div>
+        <div id="dq3">
+            <p id="q3" style="padding: 20px 5px;"> Where can I
+                watch?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+            <img src="plus.png" style="width: 50px; height: 50px; float: right; margin-top: -80px; margin-right: 20px;"
+                id="x3">
+        </div>
+        <div id="da3">
+            Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com
+            from<br>
+            your personal computer or on any internet-connected device that offers the Netflix app, including smart
+            TVs,<br>
+            smartphones, tablets, streaming media players and game consoles.<br>
+            <br>
+            You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to
+            watch<br>
+            while you're on the go and without an internet connection. Take Netflix with you anywhere.
+        </div>
+        <div id="dq4">
+            <p id="q4" style="padding: 20px 5px;"> How do I
+                cancel?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+            <img src="plus.png" style="width: 50px; height: 50px; float: right; margin-top: -80px; margin-right: 20px;"
+                id="x4">
+        </div>
+        <div id="da4">
+            Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your
+            account<br>
+            online in two clicks. There are no cancellation fees – start or stop your account anytime.<br>
+        </div>
+        <div id="dq5">
+            <p id="q5" style="padding: 20px 5px;"> What can I watch on Netflix?
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+            <img src="plus.png" style="width: 50px; height: 50px; float: right; margin-top: -80px; margin-right: 20px;"
+                id="x5">
+        </div>
+        <div id="da5">
+            Netflix has an extensive library of feature films, documentaries, TV shows, anime,<br>
+            award-winning Netflix originals,<br>
+            and more. Watch as much as you want, anytime you want.
+        </div>
+        <div id="dq6">
+            <p id="q6" style="padding: 20px 5px;"> Is Netflix good for kids? &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+            <img src="plus.png" style="width: 50px; height: 50px; float: right; margin-top: -80px; margin-right: 20px;"
+                id="x6">
+        </div>
+        <div id="da6">
+            The Netflix Kids experience is included in your membership to give parents control while kids enjoy<br>
+            family-friendly TV shows and films in their own space.<br>
+            <br>
+            Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of
+            content<br>
+            kids can watch and block specific titles you don’t want kids to see.<br>
+        </div>
+        <br>
+        <p style="font-size: 20px;">Ready to watch? Enter your email to create
+            or
+            restart your
+            membership.</p>
+        <div id="emailStart">
+            <input type="text" id="email" name="email" placeholder="Email address">
+            <button id="start" name="start">Get
+                Started ></button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <footer>
+        <p style="margin-left: 50px;">Questions? Calls 000-819-919-1694</p>
+        <a style="margin-left: 50px;" href="">FAQ</a>
+        <a style="margin-left: 300px;" href="">Help Center</a>
+        <a style="margin-left: 350px;" href="">Account</a><br>
+        <a style="margin-left: 50px;" href="">Media Center</a>
+        <a style="margin-left: 200px;" href="">Investor Relations</a>
+        <a style="margin-left: 350px;" href="">Jobs</a><br>
+        <a style="margin-left: 50px;" href="">Ways to Watch</a>
+        <a style="margin-left: 200px;" href="">Terms of Use</a>
+        <a style="margin-left: 350px;" href="">Privacy</a><br>
+        <a style="margin-left: 50px;" href="">Cookie Preferences</a>
+        <a style="margin-left: 200px;" href="">Corporate Information</a>
+        <a style="margin-left: 300px;" href="">Contact Us</a><br>
+        <a style="margin-left: 50px;" href="https:www.fast.com" alt="Speed Test" title="Speed Test">Speed Test</a>
+        <a style="margin-left: 250px;" href="">Legal Notices</a>
+        <a style="margin-left: 350px;" href="">Only on Netflix</a><br>
+        <p style="margin-left: 50px;"> 🌏 Netflix Indore</p>
+    </footer>
+    <br>
+    <br>
+
+    <script src="netflixScript.js"></script>
+</body>
+
+</html>
